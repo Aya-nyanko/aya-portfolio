@@ -1,119 +1,361 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FFFFFF">
   <meta name="description" content="Webサイト・ランディングページ制作やサイトの更新・改善に関するお問い合わせ。">
   <title>CONTACT — Aya Web Creator</title>
+
   <link rel="icon" type="image/png" sizes="16x16" href="images/brand/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/brand/favicon-32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="images/brand/favicon-48.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/brand/favicon-180.png">
   <link rel="icon" href="images/brand/favicon.ico" sizes="any">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css?v=contact-unified-4">
   <link rel="stylesheet" href="contact.css?v=1">
+
   <script src="contact-config.js?v=1" defer></script>
   <script src="main.js?v=contact-1" defer></script>
   <script src="contact.js?v=1" defer></script>
 </head>
+
 <body class="contact-page" id="top">
   <a class="skip-link" href="#main">本文へ移動</a>
+
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ポートフォリオ トップへ">
       <img class="brand-logo" src="images/brand/aya-header-logo.webp" width="720" height="240" alt="Aya Web Creator">
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="メニューを開く" hidden>
-      <span></span><span></span><span></span>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="メニューを開く"
+      hidden>
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
+
     <nav class="main-nav" id="main-nav" aria-label="メインナビゲーション">
-      <a href="index.html#works">WORKS</a><a href="index.html#about">ABOUT</a><a href="index.html#services">WHAT I CAN DO</a><a href="contact.html" aria-current="page">CONTACT <span aria-hidden="true">↗</span></a>
+      <a href="index.html#works">WORKS</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="index.html#services">WHAT I CAN DO</a>
+      <a href="contact.html" aria-current="page">
+        CONTACT <span aria-hidden="true">↗</span>
+      </a>
     </nav>
   </header>
+
   <main id="main" class="contact-page-main">
     <div class="contact-page-intro">
       <p class="contact-eyebrow">LET’S START A CONVERSATION</p>
       <h1>CONTACT<span class="contact-heading-dot" aria-hidden="true">.</span></h1>
       <p class="contact-page-jp">お問い合わせ</p>
-      <p class="contact-page-lead">Webサイト制作やランディングページ制作、<br class="contact-pc-break">サイトの更新・改善など、お気軽にご相談ください。</p>
+      <p class="contact-page-lead">
+        Webサイト制作やランディングページ制作、<br class="contact-pc-break">
+        サイトの更新・改善など、お気軽にご相談ください。
+      </p>
       <span class="contact-intro-line" aria-hidden="true"></span>
     </div>
+
     <div class="contact-form-wrap">
       <ol class="contact-steps" aria-label="お問い合わせの進行状況">
-        <li data-step="input" aria-current="step"><span>STEP 01</span><strong>入力</strong></li>
-        <li data-step="confirm"><span>STEP 02</span><strong>確認</strong></li>
-        <li data-step="success"><span>STEP 03</span><strong>送信完了</strong></li>
+        <li data-step="input" aria-current="step">
+          <span>STEP 01</span>
+          <strong>入力</strong>
+        </li>
+        <li data-step="confirm">
+          <span>STEP 02</span>
+          <strong>確認</strong>
+        </li>
+        <li data-step="success">
+          <span>STEP 03</span>
+          <strong>送信完了</strong>
+        </li>
       </ol>
-      <p class="contact-availability" id="contact-availability">現在は受付準備中です。入力・確認画面をご覧いただけますが、送信はできません。</p>
-      <noscript><p class="contact-availability">入力内容の確認にはJavaScriptが必要です。現在、送信はできません。</p></noscript>
+
+      <p class="contact-availability" id="contact-availability">
+        現在は受付準備中です。入力・確認画面をご覧いただけますが、送信はできません。
+      </p>
+
+      <noscript>
+        <p class="contact-availability">
+          入力内容の確認にはJavaScriptが必要です。現在、送信はできません。
+        </p>
+      </noscript>
+
       <p class="contact-sr-only" id="contact-step-status" role="status" aria-live="polite" aria-atomic="true"></p>
+
+      <!-- 入力画面 -->
       <section class="contact-panel" id="contact-input" aria-labelledby="contact-input-title">
-        <div class="contact-panel-heading"><h2 id="contact-input-title" tabindex="-1">ご相談内容をお聞かせください。</h2><p><span class="contact-badge">必須</span> の項目はご入力ください。</p></div>
+
+        <div class="contact-panel-heading">
+          <h2 id="contact-input-title" tabindex="-1">
+            ご相談内容をお聞かせください。
+          </h2>
+          <p><span class="contact-badge">必須</span> の項目はご入力ください。</p>
+        </div>
+
         <form id="contact-form" novalidate>
           <div class="contact-field">
-            <label for="contact-name">お名前<span class="contact-badge">必須</span></label>
-            <div class="contact-control"><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="error-name"><p class="contact-error" id="error-name"></p></div>
-          </div>
-          <div class="contact-field">
-            <label for="contact-email">メールアドレス<span class="contact-badge">必須</span></label>
-            <div class="contact-control"><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required aria-describedby="error-email"><p class="contact-error" id="error-email"></p></div>
-          </div>
-          <div class="contact-field">
-            <label for="contact-company">会社名・屋号<span class="contact-badge contact-badge-optional">任意</span></label>
-            <div class="contact-control"><input id="contact-company" name="company" type="text" autocomplete="organization" maxlength="150"  aria-describedby="error-company"><p class="contact-error" id="error-company"></p></div>
+            <label for="contact-name">
+              お名前<span class="contact-badge">必須</span>
+            </label>
+            <div class="contact-control">
+              <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="100" required
+                aria-describedby="error-name">
+              <p class="contact-error" id="error-name"></p>
+            </div>
           </div>
 
           <div class="contact-field">
-            <label for="contact-category">お問い合わせ種別<span class="contact-badge">必須</span></label>
-            <div class="contact-control"><select id="contact-category" name="category" required aria-describedby="error-category">
-              <option value="">選択してください</option><option>ランディングページ制作</option><option>ホームページ制作</option><option>サイトの更新・修正</option><option>WordPress関連</option><option>その他のご相談</option>
-            </select><p class="contact-error" id="error-category"></p></div>
+            <label for="contact-email">
+              メールアドレス<span class="contact-badge">必須</span>
+            </label>
+            <div class="contact-control">
+              <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required
+                aria-describedby="error-email">
+              <p class="contact-error" id="error-email"></p>
+            </div>
           </div>
+
           <div class="contact-field">
-            <label for="contact-message">お問い合わせ内容<span class="contact-badge">必須</span></label>
-            <div class="contact-control"><textarea id="contact-message" name="message" rows="7" maxlength="5000" required aria-describedby="message-hint error-message"></textarea><p class="contact-hint" id="message-hint">ご相談の概要、ご希望の時期など、決まっている範囲でお聞かせください。（5,000文字以内）</p><p class="contact-error" id="error-message"></p></div>
+            <label for="contact-company">
+              会社名・屋号<span class="contact-badge contact-badge-optional">任意</span>
+            </label>
+            <div class="contact-control">
+              <input id="contact-company" name="company" type="text" autocomplete="organization" maxlength="150"
+                aria-describedby="error-company">
+              <p class="contact-error" id="error-company"></p>
+            </div>
           </div>
+
+          <div class="contact-field">
+            <label for="contact-category">
+              お問い合わせ種別<span class="contact-badge">必須</span>
+            </label>
+            <div class="contact-control">
+              <select id="contact-category" name="category" required aria-describedby="error-category">
+                <option value="">選択してください</option>
+                <option>ランディングページ制作</option>
+                <option>ホームページ制作</option>
+                <option>サイトの更新・修正</option>
+                <option>WordPress関連</option>
+                <option>その他のご相談</option>
+              </select>
+              <p class="contact-error" id="error-category"></p>
+            </div>
+          </div>
+
+          <div class="contact-field">
+            <label for="contact-message">
+              お問い合わせ内容<span class="contact-badge">必須</span>
+            </label>
+            <div class="contact-control">
+              <textarea id="contact-message" name="message" rows="7" maxlength="5000" required
+                aria-describedby="message-hint error-message"></textarea>
+              <p class="contact-hint" id="message-hint">
+                ご相談の概要、ご希望の時期など、決まっている範囲でお聞かせください。（5,000文字以内）
+              </p>
+              <p class="contact-error" id="error-message"></p>
+            </div>
+          </div>
+
+          <!-- プライバシーポリシーへのリンクと同意欄 -->
           <div class="contact-consent">
-            <p><a href="#privacy-policy" id="privacy-link">プライバシーポリシー（案）を確認する <span aria-hidden="true">↗</span></a></p>
-            <label class="contact-check" for="contact-consent"><input id="contact-consent" name="consent" type="checkbox" required aria-describedby="error-consent"><span>プライバシーポリシーに同意する<span class="contact-badge">必須</span></span></label>
+            <p>
+              <a href="#privacy-policy" id="privacy-link">
+                プライバシーポリシーを確認する
+                <span aria-hidden="true">↗</span>
+              </a>
+            </p>
+
+            <label class="contact-check" for="contact-consent">
+              <input id="contact-consent" name="consent" type="checkbox" value="yes" required
+                aria-describedby="error-consent">
+              <span>
+                プライバシーポリシーに同意する
+                <span class="contact-badge">必須</span>
+              </span>
+            </label>
+
             <p class="contact-error" id="error-consent"></p>
           </div>
+
           <p class="contact-error-summary" id="contact-error-summary" role="alert"></p>
-          <div class="contact-actions"><button class="contact-button contact-button-primary" id="contact-review" type="submit" disabled>入力内容を確認する <span aria-hidden="true">→</span></button></div>
+
+          <div class="contact-actions">
+            <button class="contact-button contact-button-primary" id="contact-review" type="submit" disabled>
+              入力内容を確認する <span aria-hidden="true">→</span>
+            </button>
+          </div>
         </form>
       </section>
+
+      <!-- 確認画面 -->
       <section class="contact-panel" id="contact-confirm" aria-labelledby="contact-confirm-title" hidden>
-        <div class="contact-panel-heading"><h2 id="contact-confirm-title" tabindex="-1">入力内容をご確認ください。</h2><p>修正がある場合は、入力画面に戻って変更できます。</p></div>
+
+        <div class="contact-panel-heading">
+          <h2 id="contact-confirm-title" tabindex="-1">
+            入力内容をご確認ください。
+          </h2>
+          <p>修正がある場合は、入力画面に戻って変更できます。</p>
+        </div>
+
         <dl class="contact-review-list">
-          <div><dt>お名前</dt><dd data-review="name"></dd></div><div><dt>メールアドレス</dt><dd data-review="email"></dd></div><div><dt>会社名・屋号</dt><dd data-review="company"></dd></div><div><dt>お問い合わせ種別</dt><dd data-review="category"></dd></div><div><dt>お問い合わせ内容</dt><dd data-review="message"></dd></div>
+          <div>
+            <dt>お名前</dt>
+            <dd data-review="name"></dd>
+          </div>
+          <div>
+            <dt>メールアドレス</dt>
+            <dd data-review="email"></dd>
+          </div>
+          <div>
+            <dt>会社名・屋号</dt>
+            <dd data-review="company"></dd>
+          </div>
+          <div>
+            <dt>お問い合わせ種別</dt>
+            <dd data-review="category"></dd>
+          </div>
+          <div>
+            <dt>お問い合わせ内容</dt>
+            <dd data-review="message"></dd>
+          </div>
         </dl>
-        <p class="contact-review-consent">プライバシーポリシーへの同意：同意済み</p>
-        <p class="contact-availability" id="contact-send-note">送信先が未設定のため、現在は送信できません。</p>
+
+        <p class="contact-review-consent">
+          プライバシーポリシーへの同意：同意済み
+        </p>
+
+        <p class="contact-availability" id="contact-send-note">
+          送信先が未設定のため、現在は送信できません。
+        </p>
+
         <p class="contact-send-status" id="contact-send-status" role="status" aria-live="polite" aria-atomic="true"></p>
+
         <p class="contact-error-summary" id="contact-send-error" role="alert" tabindex="-1"></p>
-        <div class="contact-actions"><button class="contact-button" id="contact-edit" type="button">修正する</button><button class="contact-button contact-button-primary" id="contact-send" type="button" disabled aria-describedby="contact-send-note">送信する <span aria-hidden="true">→</span></button></div>
+
+        <div class="contact-actions">
+          <button class="contact-button" id="contact-edit" type="button">
+            修正する
+          </button>
+          <button class="contact-button contact-button-primary" id="contact-send" type="button" disabled
+            aria-describedby="contact-send-note">
+            送信する <span aria-hidden="true">→</span>
+          </button>
+        </div>
       </section>
-      <section class="contact-panel contact-complete" id="contact-success" aria-labelledby="contact-success-title" hidden>
-        <span class="contact-complete-symbol" aria-hidden="true">✓</span><p class="contact-eyebrow">THANK YOU</p>
-        <h2 id="contact-success-title" tabindex="-1">お問い合わせありがとうございます。</h2><p>内容を確認のうえ、ご連絡いたします。</p>
-        <a class="contact-button" href="index.html">トップページへ戻る <span aria-hidden="true">↗</span></a>
+
+      <!-- 送信完了画面 -->
+      <section class="contact-panel contact-complete" id="contact-success" aria-labelledby="contact-success-title"
+        hidden>
+
+        <span class="contact-complete-symbol" aria-hidden="true">✓</span>
+        <p class="contact-eyebrow">THANK YOU</p>
+        <h2 id="contact-success-title" tabindex="-1">
+          お問い合わせありがとうございます。
+        </h2>
+        <p>内容を確認のうえ、ご連絡いたします。</p>
+        <a class="contact-button" href="index.html">
+          トップページへ戻る <span aria-hidden="true">↗</span>
+        </a>
       </section>
+
+      <!-- プライバシーポリシー -->
       <details class="contact-policy" id="privacy-policy">
-        <summary>プライバシーポリシー <span>運営者確認前の案</span></summary>
+        <summary>プライバシーポリシー</summary>
+
         <div class="contact-policy-content">
-          <p class="contact-policy-draft">以下は公開前の確認用草案です。運営者情報・保存期間・委託先の扱い・お問い合わせ窓口は未確定で、正式なポリシーではありません。公開・受付開始前に運営者による確認と確定が必要です。</p>
-          <h2>取得する情報と利用目的（案）</h2><p>お名前、メールアドレス、会社名・屋号、ご相談内容を、お問い合わせへの回答と、それに必要な連絡のために取り扱う予定です。</p>
-          <h2>送信サービスと保管（要確認）</h2><p>送信サービスにはFormspreeの利用を予定しています。現在は未接続です。送信先、サービス利用に伴うデータの取り扱い・保管場所、保存期間と削除方法を確認したうえで、この内容を確定します。</p>
-          <h2>運営者・お問い合わせ窓口（未確定）</h2><p>運営者の正式な表示名と、情報の開示・訂正・削除などを希望する場合の連絡先は、受付開始前に掲載します。</p>
-          <a href="#contact-consent" id="privacy-return">同意欄へ戻る ↑</a>
+          <h2>1. 取得する個人情報</h2>
+          <p>
+            Aya Web Creator（以下「当サイト」）は、お問い合わせフォームを通じて、
+            お名前、メールアドレス、会社名・屋号、お問い合わせ種別、
+            お問い合わせ内容を取得します。
+          </p>
+
+          <h2>2. 個人情報の利用目的</h2>
+          <p>取得した個人情報は、以下の目的で利用します。</p>
+          <ul>
+            <li>お問い合わせやご相談への回答</li>
+            <li>Webサイト制作、更新・改善などのご相談への対応</li>
+            <li>お問い合わせに関連する確認や事務連絡</li>
+          </ul>
+
+          <h2>3. フォーム送信サービスについて</h2>
+          <p>
+            当サイトのお問い合わせフォームでは、フォーム送信サービス
+            「Formspree」を利用します。送信された情報は、Formspreeを通じて処理され、
+            当サイト運営者への通知およびお問い合わせへの対応に使用されます。
+          </p>
+          <p>
+            情報の取り扱い、処理される地域、保管期間などについては、
+            Formspreeのサービス仕様およびプライバシーポリシーをご確認ください。
+          </p>
+          <p>
+            <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+              Formspreeのプライバシーポリシー（外部サイト）
+            </a>
+          </p>
+
+          <h2>4. 個人情報の管理・保管</h2>
+          <p>
+            当サイトは、取得した個人情報への不正アクセス、漏えい、紛失などを防ぐため、
+            適切な管理に努めます。お問い合わせ内容は、回答や必要な連絡などの目的に
+            必要な範囲で取り扱います。保管の必要がなくなった情報は、適切に削除するよう努めます。
+            Formspree側での保管・削除については、同社のサービス仕様および利用条件に従います。
+          </p>
+
+          <h2>5. 第三者提供・外部サービス</h2>
+          <p>
+            法令に基づく場合などを除き、ご本人の同意なく個人情報を第三者に提供しません。
+            ただし、お問い合わせフォームの送信・管理に必要な範囲で、
+            Formspreeなどの外部サービスが情報を処理します。
+          </p>
+
+          <h2>6. 開示・訂正・削除などのお申し出</h2>
+          <p>
+            ご自身の個人情報について、開示、訂正、利用停止、削除などをご希望の場合は、
+            当サイトのお問い合わせフォームからご連絡ください。
+            ご本人確認のうえ、法令に従い適切に対応します。
+          </p>
+
+          <h2>7. ポリシーの変更</h2>
+          <p>
+            法令やサービスの変更などに応じて、本ポリシーを見直すことがあります。
+            変更後の内容は当サイト上に掲載します。
+          </p>
+
+          <h2>8. 運営者・お問い合わせ窓口</h2>
+          <p>運営者：Aya Web Creator</p>
+          <p>お問い合わせ窓口：当サイトのお問い合わせフォーム</p>
+          <p>制定日：2026年10月27日</p>
+
+          <a href="#contact-consent" id="privacy-return">
+            同意欄へ戻る ↑
+          </a>
         </div>
       </details>
+
       <a class="contact-home-link" href="index.html">← HOME</a>
     </div>
   </main>
-  <footer class="site-footer container"><a class="footer-brand" href="index.html">PORTFOLIO.</a><p>WEB DESIGN & CREATIVE</p><a class="back-top" href="index.html">HOME <span aria-hidden="true">↑</span></a></footer>
+
+  <footer class="site-footer container">
+    <a class="footer-brand" href="index.html">PORTFOLIO.</a>
+    <p>WEB DESIGN &amp; CREATIVE</p>
+    <a class="back-top" href="index.html">
+      HOME <span aria-hidden="true">↑</span>
+    </a>
+  </footer>
 </body>
+
 </html>
